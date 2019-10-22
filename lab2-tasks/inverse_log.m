@@ -1,0 +1,11 @@
+a=imread('surftocat.png');
+a=im2double(a);
+[r,c]=size(a);
+gamma=0.6;
+C=1;
+for i=1:r
+for j=1:c
+   s(i,j)=C*(a(i,j)^gamma);
+end
+end
+imshow(s);
